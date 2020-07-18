@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, tr{
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        고객 ID <input type="text" id="id" >
+        <input type="button" id="button" value="조회" />
+    </div>
+    <hr>
+    <div>
+        <table id = "table">
+            <thead>
+                <tr>
+                    <th>고객ID</th>
+                    <th>고객이름</th>
+                    <th>고객주소</th>
+                    <th>주문조회</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/servlet/customer.jstomer.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, tr{
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>
+        제품번호 <input type="text" id="productId" >
+        공급업체번호 <input type="text" id="companyId" >
+        <button id="submit">조회</button>
+        <button id="modal_btn">제품추가</button>
+    </p>
+</div>
+<hr>
+<div>
+    <table id = "table">
+        <thead>
+        <tr>
+            <th>제품번호</th>
+            <th>제품명</th>
+            <th>제품가격</th>
+            <th>제품설명</th>
+            <th>공급업체번호</th>
+            <th>삭제</th>
+        </tr>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>제품번호 <input type="text" id="prodId"></p>
+        <p>제품명 <input type="text" id="prodName"></p>
+        <p>제품가격 <input type="text" id="prodPrice"></p>
+        <p>제품설명 <input type="text" id="prodDesc"></p>
+        <p>공급업체번호 <input type="text" id="vendId"></p>
+        <button id="addProd">제품추가</button>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script src="/servlet/product.jsoduct.js"></script>
+</body>
+</html>
