@@ -11,6 +11,4 @@ public class LoginController {
         }
         return true;
     }
-
-    public 
 }

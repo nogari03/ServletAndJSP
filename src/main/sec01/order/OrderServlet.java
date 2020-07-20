@@ -48,11 +48,8 @@ public class OrderServlet extends HttpServlet {
         ServletContext context = this.getServletContext();
         RequestDispatcher dispatcher = context.getRequestDispatcher("/servlet/order.jsp");
 
-        try {
-            dispatcher.forward(request, response);
-        } catch (ServletException e){
-            e.getStackTrace();
-        }
+        dispatcher.forward(request, response);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
